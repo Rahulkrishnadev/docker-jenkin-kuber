@@ -21,3 +21,8 @@ def even(num):
 async def final(data:evennumber):
     result=even(data.num)
     return result
+
+
+@app.post("/welcome")
+async def Hello():
+    return {'message':"welcome the world of emotions"}
